@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../../components/Hero/Hero";
 import ServiceSection from "../../components/ServiceSection/App";
 import BrandSection from "../../components/BrandSection/App";
+import WhySection from "../../components/WhySection/App";
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <Hero />
       <ServiceSection />
       <BrandSection />
+      <WhySection />
     </div>
   );
 }

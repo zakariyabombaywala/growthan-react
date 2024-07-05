@@ -7,7 +7,7 @@ function SectionHeader(props) {
         <img src={props.icon} alt="icon" />
         <div className={`space-y-1`}>
           <p className="text-[15px] text-red">
-            / /{" "}
+            / /
             <span className="text-blue-900 uppercase font-medium">
               {props.hint}
             </span>

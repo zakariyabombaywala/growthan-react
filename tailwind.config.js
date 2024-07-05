@@ -41,6 +41,7 @@ export default {
         gray: {
           DEFAULT: "#555555",
           200: "#dcdcdc",
+          800: "#CFCFCF",
         },
       },
       backgroundImage: {
