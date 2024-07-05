@@ -19,6 +19,7 @@ function Hero() {
                 textColor="text-white"
                 hover="hover:bg-transparent hover:text-blue hover:border border-blue hover:font-semobold"
                 rounded="rounded-md"
+                padding="px-10 py-4"
               />
             </div>
           </div>

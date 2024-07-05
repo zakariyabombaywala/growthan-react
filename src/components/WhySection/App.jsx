@@ -39,6 +39,7 @@ function WhySection() {
               textColor="text-white"
               hover="hover:border border-blue hover:text-blue hover:bg-white"
               rounded="rounded-md"
+              padding="px-9 py-4"
             />
           </div>
         </div>

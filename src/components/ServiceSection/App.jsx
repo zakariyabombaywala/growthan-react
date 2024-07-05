@@ -59,6 +59,7 @@ function ServiceSection() {
           textColor="text-white"
           rounded="rounded-md"
           hover="hover:bg-transparent hover:text-blue hover:border border-blue hover:font-semobold"
+          padding="px-9 py-4"
         />
       </div>
       <div className="grid grid-cols-3 gap-[72px]">

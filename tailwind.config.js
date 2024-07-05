@@ -40,13 +40,16 @@ export default {
         },
         gray: {
           DEFAULT: "#555555",
+          100: "#ECECEC",
           200: "#dcdcdc",
+          300: "#d0d0d0",
           800: "#CFCFCF",
         },
       },
       backgroundImage: {
         heroBg: "url(/src/assets/hero-bg.png)",
         heroImage: "url(/src/assets/hero-image.png)",
+        subscribe: "url(/src/assets/Subscribe-bg-img.png)",
       },
     },
   },
