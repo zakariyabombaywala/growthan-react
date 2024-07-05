@@ -7,7 +7,7 @@ import Button from "../Button/Button";
 function WhySection() {
   return (
     <div className="container pt-40">
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid lg:grid-cols-2 gap-8">
         <div className="flex justify-center">
           <img src={SecImg} alt="Image" />
         </div>

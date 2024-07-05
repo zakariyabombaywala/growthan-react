@@ -2,6 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import Button from "../Button/Button";
 import Logo from "../../assets/logo.png";
+import { Bars3Icon } from "@heroicons/react/24/outline";
 
 function Navbar() {
   return (
@@ -71,6 +72,17 @@ function Navbar() {
           hover="hover:bg-transparent hover:text-blue hover:border border-blue hover:font-semobold"
           rounded="rounded-md"
           padding="px-10 py-4"
+          hidden="hidden lg:block"
+        />
+
+        <Button
+          text={<Bars3Icon className="size-6" />}
+          bg="bg-white"
+          textColor="text-black"
+          hover="hover:bg-transparent hover:text-blue hover:border border-blue hover:font-semobold"
+          rounded="rounded-md"
+          padding="px-10 py-4"
+          hidden="block lg:hidden"
         />
       </div>
     </div>

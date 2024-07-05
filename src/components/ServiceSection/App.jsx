@@ -62,7 +62,7 @@ function ServiceSection() {
           padding="px-9 py-4"
         />
       </div>
-      <div className="grid grid-cols-3 gap-[72px]">
+      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[72px]">
         {cardItems.map((item) => {
           return (
             <ServiceCard icon={item.icon} title={item.title} desc={item.desc} />

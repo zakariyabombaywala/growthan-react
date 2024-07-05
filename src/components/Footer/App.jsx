@@ -3,9 +3,9 @@ import { Link, NavLink } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="bg-blue text-white">
+    <div className="bg-blue text-white mt-40">
       <div className="container pt-24">
-        <div className="grid grid-cols-4 gap-10 pb-24 border-b-[0.5px]">
+        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-10 pb-24 border-b-[0.5px]">
           <div className="">
             <h1 className="text-[25px] font-semibold mb-[30px]">Pages</h1>
             <Link>
@@ -99,7 +99,7 @@ function Footer() {
             <Link>
               <ul className="space-y-4">
                 <li>
-                  <NavLink className="text-[25px] font-bold py-3 px-7 bg-black rounded-md">
+                  <NavLink className="lg:text-[25px] font-bold py-3 px-7 bg-black rounded-md">
                     +91 8617514085
                   </NavLink>
                 </li>
