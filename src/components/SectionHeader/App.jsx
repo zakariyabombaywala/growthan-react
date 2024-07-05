@@ -4,10 +4,12 @@ function SectionHeader(props) {
   return (
     <div>
       <div className={`${props.display} ${props.space}`}>
-        <img src={props.icon} alt="icon" />
+        <div className={`${props.flex}`}>
+          <img className="max-w-[86]" src={props.icon} alt="icon" />
+        </div>
         <div className={`space-y-1`}>
           <p className="text-[15px] text-red">
-            / /
+            / /{" "}
             <span className="text-blue-900 uppercase font-medium">
               {props.hint}
             </span>
