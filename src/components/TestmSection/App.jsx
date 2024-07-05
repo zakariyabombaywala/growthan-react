@@ -97,7 +97,7 @@ function TestmSection() {
           })}
         </div>
       </div>
-      <div className="bg-subscribe p-36">
+      <div className="bg-subscribe bg-no-repeat bg-cover bg-center  mt-[120px] p-36">
         <div className="container gap-12 grid grid-cols-2 place-items-center justify-center  ">
           {customers.map((item) => {
             return (

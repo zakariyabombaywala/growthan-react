@@ -5,6 +5,7 @@ import BrandSection from "../../components/BrandSection/App";
 import WhySection from "../../components/WhySection/App";
 import HowSection from "../../components/HowSection/App";
 import TestmSection from "../../components/TestmSection/App";
+import OfferSection from "../../components/OfferSection/App";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <WhySection />
       <HowSection />
       <TestmSection />
+      <OfferSection />
     </div>
   );
 }

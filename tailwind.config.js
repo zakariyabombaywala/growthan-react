@@ -50,6 +50,7 @@ export default {
         heroBg: "url(/src/assets/hero-bg.png)",
         heroImage: "url(/src/assets/hero-image.png)",
         subscribe: "url(/src/assets/Subscribe-bg-img.png)",
+        statistic: "url(/src/assets/statistic-img.png)",
       },
     },
   },
