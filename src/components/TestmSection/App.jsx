@@ -8,6 +8,7 @@ import Peeter from "../../assets/propfile-peeter.png";
 import Button from "../Button/Button";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import TestmCard from "../TestmCard/App";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 function TestmSection() {
   // Card data
@@ -82,20 +83,22 @@ function TestmSection() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-7">
+        <Swiper slidesPerView={2} spaceBetween={26}>
           {data.map((item) => {
             return (
-              <TestmCard
-                src={item.icon}
-                title={item.brand}
-                desc={item.brandDesc}
-                profile={item.profileImg}
-                profileTitle={item.profileTitle}
-                profileDesc={item.profileDesc}
-              />
+              <SwiperSlide>
+                <TestmCard
+                  src={item.icon}
+                  title={item.brand}
+                  desc={item.brandDesc}
+                  profile={item.profileImg}
+                  profileTitle={item.profileTitle}
+                  profileDesc={item.profileDesc}
+                />
+              </SwiperSlide>
             );
           })}
-        </div>
+        </Swiper>
       </div>
       <div className="bg-subscribe bg-no-repeat bg-cover bg-center  mt-[120px] p-36">
         <div className="container gap-12 grid grid-cols-2 place-items-center justify-center  ">

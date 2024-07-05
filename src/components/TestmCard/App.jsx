@@ -1,5 +1,6 @@
 import React from "react";
 import { StarIcon } from "@heroicons/react/24/solid";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 function TestmCard(props) {
   return (

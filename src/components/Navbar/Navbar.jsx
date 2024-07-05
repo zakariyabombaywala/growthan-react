@@ -5,7 +5,7 @@ import Logo from "../../assets/logo.png";
 
 function Navbar() {
   return (
-    <div className="container flex justify-between items-center py-4 fixed top-0 inset-x-0 z-[999] ">
+    <div className="container flex justify-between items-center py-4 ">
       <div>
         <img className="mx-w-[352px]" src={Logo} alt="logo" />
       </div>
