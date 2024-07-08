@@ -6,7 +6,7 @@ import Button from "../Button/Button";
 
 function WhySection() {
   return (
-    <div className="container pt-40">
+    <div className="container pt-20 md:pt-40">
       <div className="grid lg:grid-cols-2 gap-8">
         <div className="flex justify-center">
           <img src={SecImg} alt="Image" />
@@ -33,14 +33,7 @@ function WhySection() {
             and drive successful results.
           </p>
           <div className="flex">
-            <Button
-              text="register"
-              bg="bg-blue"
-              textColor="text-white"
-              hover="hover:border border-blue hover:text-blue hover:bg-white"
-              rounded="rounded-md"
-              padding="px-9 py-4"
-            />
+            <Button name="register" variant="primary" />
           </div>
         </div>
       </div>

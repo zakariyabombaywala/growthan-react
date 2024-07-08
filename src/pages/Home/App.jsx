@@ -6,6 +6,7 @@ import WhySection from "../../components/WhySection/App";
 import HowSection from "../../components/HowSection/App";
 import TestmSection from "../../components/TestmSection/App";
 import OfferSection from "../../components/OfferSection/App";
+import Sidebar from "../../components/MobileMenu/App";
 
 function Home() {
   return (

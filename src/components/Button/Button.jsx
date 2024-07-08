@@ -1,12 +1,26 @@
 import React from "react";
+import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
-function Button(props) {
+function Button({ onClick, name, variant, arrow }) {
+  const style = {
+    primary:
+      "bg-blue text-white px-[39px] pt-[17px] pb-[18px] hover:bg-white hover:text-blue border border-blue transition-colors",
+    outline:
+      "bg-white text-blue px-[35px] py-[17px] hover:bg-blue hover:text-white transition-colors",
+    toggle:
+      "text-white bg-blue p-2 hover:bg-white hover:text-blue hover:border hover:border-blue transition-colors",
+    icon: "bg-blue text-white px-5 py-4 hover:bg-white hover:text-blue border border-blue transition-colors",
+  };
   return (
-    <div
-      className={`${props.bg} ${props.textColor} ${props.border} ${props.hover} ${props.rounded} ${props.padding} ${props.hidden} text-[18px] capitalize font-semibold  cursor-pointer`}
+    <button
+      onClick={onClick}
+      className={`${style[variant]} rounded-lg text-[18px] capitalize font-semibold cursor-pointer flex items-center space-x-10`}
     >
-      {props.text}
-    </div>
+      {name}
+      {arrow ? (
+        <ChevronRightIcon className="size-5 ms-2 bg-white rounded-full text-blue p-1 transition-colors" />
+      ) : null}
+    </button>
   );
 }
 

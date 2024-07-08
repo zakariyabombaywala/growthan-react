@@ -8,7 +8,7 @@ function OfferSection() {
   return (
     <div className="pt-40">
       <div className="container">
-        <div className="grid grid-cols-2 gap-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
           <div className="">
             <img src={Statistic} alt="image" />
           </div>
@@ -34,14 +34,7 @@ function OfferSection() {
               in-conversion rate
             </p>
             <div className="flex">
-              <Button
-                text="register"
-                bg="bg-blue"
-                textColor="text-white"
-                hover="hover:bg-transparent hover:text-blue hover:border border-blue hover:font-semobold"
-                rounded="rounded-md"
-                padding="px-10 py-4"
-              />
+              <Button name="register" variant="primary" />
             </div>
           </div>
         </div>

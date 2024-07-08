@@ -35,7 +35,7 @@ function HowSection() {
     },
   ];
   return (
-    <div className="container pt-40 ">
+    <div className="container pt-20 md:pt-40 ">
       <div className="bg-gradient-to-br from-blue-200 via-red-400 to-yellow-300 p-20 space-y-16">
         <div className=" flex justify-center text-center">
           <SectionHeader

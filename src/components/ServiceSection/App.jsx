@@ -44,7 +44,7 @@ function ServiceSection() {
     },
   ];
   return (
-    <div className="container pt-40 pb-20">
+    <div className="container pt-20 md:pt-40 pb-0 md:pb-20">
       <div className="flex justify-between items-center mb-[90px]">
         <SectionHeader
           icon={Icon}
@@ -53,16 +53,9 @@ function ServiceSection() {
           hint="services"
           title="Services We Provide"
         />
-        <Button
-          text="Our Services"
-          bg="bg-blue"
-          textColor="text-white"
-          rounded="rounded-md"
-          hover="hover:bg-transparent hover:text-blue hover:border border-blue hover:font-semobold"
-          padding="px-9 py-4"
-        />
+        <Button name="Our Services" variant="icon" arrow={true} />
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[72px]">
+      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10">
         {cardItems.map((item) => {
           return (
             <ServiceCard icon={item.icon} title={item.title} desc={item.desc} />
