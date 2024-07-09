@@ -4,7 +4,7 @@ function WorkInfo(props) {
   const isEven = (props.index + 1) % 2 === 0;
   return (
     <div
-      className={`grid grid-cols-1 justify-center place-items-center lg:grid-cols-[1fr_86px_1fr] space-y-7 `}
+      className={`before:content-[''] before:absolute grid grid-cols-1 justify-center place-items-center lg:grid-cols-[1fr_86px_1fr] space-y-7 `}
     >
       <div
         className={`flex items-center ${
@@ -13,7 +13,7 @@ function WorkInfo(props) {
       >
         <img src={props.src} alt="icon" />
       </div>
-      <div className="before:content-[''] flex justify-center items-center order-2 bg-white rounded-full w-[86px] h-[86px] border-8 border-blue-600">
+      <div className="flex justify-center items-center order-2 bg-white rounded-full w-[86px] h-[86px] border-8 border-blue-600">
         <span className="text-[30px] font-semibold text-blue mx-auto">
           {props.steps}
         </span>

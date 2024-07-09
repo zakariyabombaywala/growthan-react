@@ -45,7 +45,7 @@ function HowSection() {
             variant="vertical"
           />
         </div>
-        <div className="space-y-24">
+        <div className="space-y-24 ">
           {data.map((item, index) => {
             return (
               <WorkInfo

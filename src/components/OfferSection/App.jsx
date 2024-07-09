@@ -32,7 +32,7 @@ function OfferSection() {
               optimizing the creatives and landing pages for the increase
               in-conversion rate
             </p>
-            <div className="flex">
+            <div className="flex justify-center md:justify-start">
               <Button name="register" variant="primary" />
             </div>
           </div>

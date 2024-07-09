@@ -17,7 +17,7 @@ function SectionHeader({ variant, icon, hint, title, width }) {
             <span className="text-blue-900 uppercase font-medium">{hint}</span>
           </p>
           <h3
-            className={`${width} text-[25px] md:text-[40px] font-semibold text-blue`}
+            className={`${width} text-[20px] md:text-[40px] font-semibold text-blue`}
           >
             {title}
           </h3>

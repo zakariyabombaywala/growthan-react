@@ -31,7 +31,7 @@ function WhySection() {
             advertisers and publishers to mutually grow their business, revenue
             and drive successful results.
           </p>
-          <div className="flex">
+          <div className="flex justify-center md:justify-start">
             <Button name="register" variant="primary" />
           </div>
         </div>
