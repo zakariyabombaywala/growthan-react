@@ -17,9 +17,9 @@ function Navbar() {
     <div className="container flex justify-between items-center py-4 ">
       {!showSidebar && (
         <>
-          <div className="max-h-[32%]">
+          <div className="max-h-[64px]">
             <NavLink to="">
-              <img src={Logo} alt="logo" />
+              <img className="h-full" src={Logo} alt="logo" />
             </NavLink>
           </div>
           <div className="hidden lg:flex ">

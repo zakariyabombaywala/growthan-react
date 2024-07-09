@@ -13,6 +13,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 
 function TestmSection() {
+  const [active, setActive] = useState(0);
   const navigationPrevRef = React.useRef(null);
   const navigationNextRef = React.useRef(null);
   // Card data
@@ -93,13 +94,24 @@ function TestmSection() {
           />
           <div className="hidden lg:flex items-center space-x-4">
             <ChevronLeftIcon
+              onClick={() => setActive(0)}
               ref={navigationPrevRef}
-              className={`border bg-blue rounded-full size-20 p-4 text-white`}
+              className={`${
+                active === 0
+                  ? "bg-blue text-white"
+                  : "bg-white text-blue drop-shadow-md"
+              } border  rounded-full size-20 p-4 `}
             />
 
             <ChevronRightIcon
+              id="right"
+              onClick={() => setActive(1)}
               ref={navigationNextRef}
-              className={` border rounded-full size-20 drop-shadow-md p-4 text-blue`}
+              className={`${
+                active === 1
+                  ? "bg-blue text-white"
+                  : "bg-white text-blue drop-shadow-md"
+              } border rounded-full size-20  p-4 text-blue`}
             />
           </div>
         </div>
