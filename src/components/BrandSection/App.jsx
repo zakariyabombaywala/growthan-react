@@ -25,7 +25,7 @@ function BrandSection() {
         className="mySwiper"
         breakpoints={{
           0: {
-            slidesPerView: 2,
+            slidesPerView: 2.1,
           },
           640: {
             slidesPerView: 3,

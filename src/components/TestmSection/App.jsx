@@ -128,8 +128,12 @@ function TestmSection() {
               swiper.params.navigation.nextEl = navigationNextRef.current;
             }}
             breakpoints={{
-              640: {
+              0: {
                 slidesPerView: 1,
+              },
+              640: {
+                slidesPerView: 1.7,
+                spaceBetween: 20,
               },
               1024: {
                 slidesPerView: 2,

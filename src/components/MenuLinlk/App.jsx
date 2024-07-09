@@ -5,8 +5,10 @@ function MenuLInk({ variant, path }) {
   const [activelink, setActiveLink] = useState("/");
 
   const style = {
-    dekstopMenuLink: "flex flex space-x-16",
-    mobileMenuLink: "flex flex-col space-y-7 block text-[1.5rem] px-6 py-4",
+    dekstopMenuLink: "flex flex space-x-16 text-blue",
+    mobileMenuLink:
+      "flex flex-col space-y-7 block text-[1.5rem] px-6 py-4 text-blue",
+    footerLink: "space-y-4 text-[18px] text-white ",
   };
 
   const location = [
@@ -29,8 +31,8 @@ function MenuLInk({ variant, path }) {
               to={links.path}
               className={() =>
                 `${
-                  activelink === links.path ? "text-red" : "text-blue"
-                } text-blue text-[18px] font-medium hover:text-red`
+                  activelink === links.path ? "text-red" : `${style[variant]}`
+                }  text-[18px] font-medium hover:text-red`
               }
               onClick={() => handleClick(links.path)}
             >

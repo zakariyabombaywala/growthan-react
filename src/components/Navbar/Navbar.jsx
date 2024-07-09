@@ -36,7 +36,7 @@ function Navbar() {
 
           <div className=" lg:hidden">
             <Bars3Icon
-              className="size-10 text-white bg-blue rounded-md p-1 hover:bg-white hover:border hover:border-blue hover:text-blue"
+              className="size-8 md:size-10 text-white bg-blue rounded-md p-1 hover:bg-white hover:border hover:border-blue hover:text-blue"
               onClick={toggleMenu}
             />
           </div>
