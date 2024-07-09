@@ -10,6 +10,7 @@ import TestmCard from "../TestmCard/App";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
+import SubscribeBanner from "../SubscribeBanner/App";
 
 function TestmSection() {
   const [active, setActive] = useState(0);
@@ -52,30 +53,6 @@ function TestmSection() {
       profileImg: Peeter,
       profileTitle: "Peeter pawl",
       profileDesc: "Designer",
-    },
-  ];
-
-  // customers data
-  const customers = [
-    {
-      count: "100",
-      text: "HAPPY CLIENTS",
-      textColor: "text-blue-500",
-    },
-    {
-      count: "500",
-      text: "PUBLISHERS",
-      textColor: "text-red-700",
-    },
-    {
-      count: "25,000",
-      text: "DAILY CONVERSIONS",
-      textColor: "text-yellow-700",
-    },
-    {
-      count: "150",
-      text: "CAMPAIGNS DELIVERED",
-      textColor: "text-green-700",
     },
   ];
 
@@ -158,25 +135,7 @@ function TestmSection() {
           </Swiper>
         </div>
       </div>
-      <div className="bg-subscribe bg-no-repeat bg-cover bg-center  mt-[120px] p-12 md:p-36">
-        <div className="container gap-12 grid-cols-1 grid lg:grid-cols-2 place-items-center justify-center  ">
-          {customers.map((item) => {
-            return (
-              <div className="flex space-x-4 items-center">
-                <h3 className="text-white text-[40px] md:text-[50px] font-semibold">
-                  {item.count}
-                  <span className={`${item.textColor}`}>+</span>
-                </h3>
-                <div className="max-w-[155px]">
-                  <p className="text-[15px] md:text-[20px] text-gray-300 font-medium ">
-                    {item.text}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
+      <SubscribeBanner variant="home" />
     </div>
   );
 }

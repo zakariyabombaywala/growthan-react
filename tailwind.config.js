@@ -47,8 +47,11 @@ export default {
         },
       },
       backgroundImage: {
-        heroBg: "url(/src/assets/hero-bg.png)",
-        heroImage: "url(/src/assets/hero-image.png)",
+        hero_bg: "url(/src/assets/hero-bg.png)",
+        hero_image: "url(/src/assets/hero-image.png)",
+        banner_about: "url(/src/assets/about-banner.png)",
+        banner_service: "url(/src/assets/service-banner.png)",
+        banner_contact: "url(/src/assets/contact-banner.png)",
         subscribe: "url(/src/assets/Subscribe-bg-img.png)",
         statistic: "url(/src/assets/statistic-img.png)",
       },

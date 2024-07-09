@@ -2,7 +2,7 @@ import React from "react";
 
 function SectionHeader({ variant, icon, hint, title, width }) {
   const style = {
-    horizontal: "flex space-x-10 items-center",
+    horizontal: "flex space-x-10 items-start ",
     vertical: "flex flex-col space-y-10 items-center",
   };
   return (
@@ -17,7 +17,7 @@ function SectionHeader({ variant, icon, hint, title, width }) {
             <span className="text-blue-900 uppercase font-medium">{hint}</span>
           </p>
           <h3
-            className={`${width} text-[20px] md:text-[40px] font-semibold text-blue`}
+            className={`${width} text-[20px] md:text-[40px] font-semibold text-blue leading-[110.5%]`}
           >
             {title}
           </h3>

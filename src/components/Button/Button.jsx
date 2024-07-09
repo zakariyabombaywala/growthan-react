@@ -6,7 +6,7 @@ function Button({ onClick, name, variant, arrow }) {
     primary:
       "bg-blue text-white px-[39px] pt-[17px] pb-[18px] hover:bg-white hover:text-blue border border-blue transition-colors",
     outline:
-      "bg-white text-blue px-[35px] py-[17px] hover:bg-blue hover:text-white transition-colors",
+      "bg-white text-blue border border-blue px-[35px] py-[17px] hover:bg-blue hover:text-white transition-colors",
     icon: "bg-blue text-white px-5 py-4 hover:bg-white hover:text-blue border border-blue transition-colors",
   };
   return (
