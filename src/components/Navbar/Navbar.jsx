@@ -16,9 +16,13 @@ function Navbar() {
   return (
     <div>
       <div className="container flex justify-between items-center py-4 ">
-        <div className="max-h-[64px]">
+        <div className="">
           <NavLink to="">
-            <img className="h-full" src={Logo} alt="logo" />
+            <img
+              className="max-h-[32px] md:max-h-[64px]"
+              src={Logo}
+              alt="logo"
+            />
           </NavLink>
         </div>
         <div className="hidden lg:flex ">

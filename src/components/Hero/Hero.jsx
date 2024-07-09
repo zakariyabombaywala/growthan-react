@@ -8,7 +8,7 @@ function Hero() {
       <div className="container">
         <div className="grid grid-cols-1 items-center place-items-center h-screen pt-24 md:gap-10 md:grid-cols-2 ">
           <div className="space-y-10 order-2 md:order-1">
-            <h1 className="text-[60px] font-extrabold text-blue leading-none text-center md:text-start">
+            <h1 className="text-[50px] md:text-[60px] font-extrabold text-blue leading-none text-center md:text-start">
               Driving the Digital Growth by
               <span className="text-red"> Affiliate Marketing</span>
             </h1>

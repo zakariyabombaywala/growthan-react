@@ -6,7 +6,7 @@ import Button from "../Button/Button";
 
 function OfferSection() {
   return (
-    <div className="pt-40">
+    <div className="pt-20 md:pt-40">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
           <div className="">
@@ -16,13 +16,12 @@ function OfferSection() {
             <div className="pb-8 border-b border-b-gray-800 ">
               <SectionHeader
                 icon={Star}
-                display="flex"
+                variant="horizontal"
                 hint="GET THE BEST"
-                space="space-x-10"
                 title="We Offer Reliable Solution To Increase Brand Visibility"
               />
             </div>
-            <p className="text-[18px] text-justify text-blue-900">
+            <p className="text-[16px] md:text-[18px] text-justify text-blue-900">
               We help brands to advertise on Web & Mobile medium. We help brands
               to select best medium with optimum module in order to maximize
               their ROI. Our experienced Media Buying & Planning team help

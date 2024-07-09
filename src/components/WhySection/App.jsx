@@ -15,13 +15,12 @@ function WhySection() {
           <div className="border-b pb-[36px] border-gray-800">
             <SectionHeader
               icon={HeadIcon}
-              display="flex"
-              space="space-x-10"
+              variant="horizontal"
               hint="GET THE BEST"
               title="Why Growthan?"
             />
           </div>
-          <p className="text-[18px] text-blue-900 text-justify">
+          <p className="text-[16px] md:text-[18px] text-blue-900 text-justify">
             We at Growthan provide a robust platform for wide range of
             Performance Marketing Services. We expertise in various models of
             marketing to suit our clients requirement and generate best ROI. we

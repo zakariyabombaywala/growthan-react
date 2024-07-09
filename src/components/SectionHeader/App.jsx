@@ -3,7 +3,7 @@ import React from "react";
 function SectionHeader({ variant, icon, hint, title, width }) {
   const style = {
     horizontal: "flex space-x-10 items-center",
-    vertical: "flex flex-col space-y-16 items-center",
+    vertical: "flex flex-col space-y-10 items-center",
   };
   return (
     <div>

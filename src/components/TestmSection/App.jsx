@@ -36,13 +36,13 @@ function TestmSection() {
       profileDesc: "Designer",
     },
     {
-      icon: BrandIcobSecond,
+      icon: BrandIcobFirst,
       brand: "company",
       brandDesc:
-        "I'm extremely impressed with the level of expertise and dedication that the team at Growthan brings to every project. They consistently deliver great results.",
-      profileImg: Peeter,
-      profileTitle: "Peeter pawl",
-      profileDesc: "Designer",
+        "Working with growthan.com has been a game-changer for our business. Their strategies have led to significant growth and a boost in revenue.",
+      profileImg: Jhon,
+      profileTitle: "John Carter",
+      profileDesc: "Marketing Lead at Google",
     },
     {
       icon: BrandIcobSecond,
@@ -80,16 +80,15 @@ function TestmSection() {
   ];
 
   return (
-    <div className="pt-40 ">
+    <div className="pt-20 md:pt-40 ">
       <div className="container">
         <div className="flex justify-between items-center mb-[90px]">
           <SectionHeader
             icon={HeadIcon}
             hint="Testimonial"
             title="We work with customers across all industries"
-            display="flex"
-            space="space-x-10"
-            width="max-w-[600px]"
+            variant="horizontal"
+            width="max-w-[595px]"
           />
           <div className="hidden lg:flex items-center space-x-4">
             <ChevronLeftIcon
@@ -155,17 +154,17 @@ function TestmSection() {
           </Swiper>
         </div>
       </div>
-      <div className="bg-subscribe bg-no-repeat bg-cover bg-center  mt-[120px] p-36">
+      <div className="bg-subscribe bg-no-repeat bg-cover bg-center  mt-[120px] p-12 md:p-36">
         <div className="container gap-12 grid-cols-1 grid lg:grid-cols-2 place-items-center justify-center  ">
           {customers.map((item) => {
             return (
               <div className="flex space-x-4 items-center">
-                <h3 className="text-white text-[50px] font-semibold">
+                <h3 className="text-white text-[40px] md:text-[50px] font-semibold">
                   {item.count}
                   <span className={`${item.textColor}`}>+</span>
                 </h3>
                 <div className="max-w-[155px]">
-                  <p className="text-[20px] text-gray-300 font-medium ">
+                  <p className="text-[15px] md:text-[20px] text-gray-300 font-medium ">
                     {item.text}
                   </p>
                 </div>

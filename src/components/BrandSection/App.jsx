@@ -20,8 +20,23 @@ function BrandSection() {
     Goldline,
   ];
   return (
-    <div className="container pt-20 md:pt-40">
-      <Swiper className="mySwiper" slidesPerView={5} spaceBetween={50}>
+    <div className="container pt-20 lg:pt-40">
+      <Swiper
+        className="mySwiper"
+        breakpoints={{
+          0: {
+            slidesPerView: 2,
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        }}
+      >
         {brand.map((item) => {
           return (
             <SwiperSlide>
