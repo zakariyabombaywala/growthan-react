@@ -1,25 +1,23 @@
-import React from "react";
-import Logo from "../../assets/logo.png";
-import Button from "../Button/Button";
-import { XMarkIcon } from "@heroicons/react/24/solid";
+import React, { useEffect, useState } from "react";
 import MenuLInk from "../MenuLinlk/App";
 
-function MobileMenu({ show, onClick }) {
+function MobileMenu({ show }) {
+  const [menuHeight, setMenuHeight] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setMenuHeight(scrollY);
+    });
+  });
   return (
     <div
-      className={`${
-        show ? "translate-x-0" : "-translate-x-full"
-      } fixed lg:hidden top-0 left-0 w-full  lg:w-4/12 md:w-1/2 h-full grid grid-rows-[auto_1fr_auto] space-y-4 bg-white  `}
+      className={`${menuHeight > 90 && "hidden"} ${
+        show ? "block" : "hidden"
+      } drop-shadow bg-white sm:w-3/4 mx-auto `}
     >
-      <div className="flex justify-between items-center px-6 py-4 ">
-        <img className="w-3/4" src={Logo} alt="logo" />
-        <Button
-          onClick={onClick}
-          name={<XMarkIcon className="size-8 text-blue" />}
-        />
+      <div className="block text-center">
+        <MenuLInk variant="mobileMenuLink" />
       </div>
-      {/* Links */}
-      <MenuLInk variant="mobileMenuLink" />
     </div>
   );
 }

@@ -1,11 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import SectionHeader from "../SectionHeader/App";
 import HeadIcon from "../../assets/chat-icon.png";
 import BrandIcobFirst from "../../assets/brand-icon-1.png";
 import BrandIcobSecond from "../../assets/brand-icon-2.png";
 import Jhon from "../../assets/profile-jhon.png";
 import Peeter from "../../assets/propfile-peeter.png";
-import Button from "../Button/Button";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import TestmCard from "../TestmCard/App";
 import { Swiper, SwiperSlide } from "swiper/react";

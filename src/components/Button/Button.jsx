@@ -7,8 +7,6 @@ function Button({ onClick, name, variant, arrow }) {
       "bg-blue text-white px-[39px] pt-[17px] pb-[18px] hover:bg-white hover:text-blue border border-blue transition-colors",
     outline:
       "bg-white text-blue px-[35px] py-[17px] hover:bg-blue hover:text-white transition-colors",
-    toggle:
-      "text-white bg-blue p-2 hover:bg-white hover:text-blue hover:border hover:border-blue transition-colors",
     icon: "bg-blue text-white px-5 py-4 hover:bg-white hover:text-blue border border-blue transition-colors",
   };
   return (

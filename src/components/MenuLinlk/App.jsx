@@ -6,7 +6,7 @@ function MenuLInk({ variant }) {
 
   const style = {
     dekstopMenuLink: "flex flex space-x-16",
-    mobileMenuLink: "flex flex-col space-y-7 block text-[1.5rem] px-6 py-4 ",
+    mobileMenuLink: "flex flex-col space-y-7 block text-[1.5rem] px-6 py-4",
   };
 
   const location = [
