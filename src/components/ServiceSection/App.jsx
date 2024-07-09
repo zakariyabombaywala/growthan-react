@@ -48,12 +48,13 @@ function ServiceSection() {
       <div className="flex justify-between items-center mb-[90px]">
         <SectionHeader
           icon={Icon}
-          display="flex"
-          space="space-x-10"
+          variant="horizontal"
           hint="services"
           title="Services We Provide"
         />
-        <Button name="Our Services" variant="icon" arrow={true} />
+        <div className="hidden md:block">
+          <Button name="Our Services" variant="icon" arrow={true} />
+        </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10">
         {cardItems.map((item) => {
