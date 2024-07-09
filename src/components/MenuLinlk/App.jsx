@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-function MenuLInk({ variant }) {
+function MenuLInk({ variant, path }) {
   const [activelink, setActiveLink] = useState("/");
 
   const style = {

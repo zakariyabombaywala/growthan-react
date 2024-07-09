@@ -1,7 +1,30 @@
-import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
+  const [activelink, setActiveLink] = useState("/");
+  const pageLoaction = [
+    {
+      path: "/",
+      name: "Home",
+    },
+    {
+      path: "/about",
+      name: "About Us",
+    },
+    {
+      path: "/services",
+      name: "Services",
+    },
+    {
+      path: "/contact",
+      name: "Contact",
+    },
+  ];
+
+  const handleClick = (path) => {
+    setActiveLink(path);
+  };
   return (
     <div className="bg-blue text-white mt-20 md:mt-40">
       <div className="container pt-24">
@@ -10,6 +33,26 @@ function Footer() {
             <h1 className="text-[25px] font-semibold mb-[30px]">Pages</h1>
 
             <ul className="space-y-4 text-[18px]">
+              {pageLoaction.map((items) => {
+                return (
+                  <li>
+                    <NavLink
+                      to={items.path}
+                      className={() =>
+                        `${
+                          activelink === items.path ? "text-red" : "text-white"
+                        } text-blue text-[18px] font-medium hover:text-red`
+                      }
+                      onClick={() => handleClick(items.path)}
+                    >
+                      {items.name}
+                    </NavLink>
+                  </li>
+                );
+              })}
+            </ul>
+
+            {/* <ul className="space-y-4 text-[18px]">
               <li className="">
                 <NavLink
                   to=""
@@ -50,7 +93,7 @@ function Footer() {
                   Contact
                 </NavLink>
               </li>
-            </ul>
+            </ul> */}
           </div>
           <div className="">
             <h1 className="text-[25px] font-semibold mb-[30px]">
