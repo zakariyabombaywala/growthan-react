@@ -28,7 +28,7 @@ function BrandSection() {
             slidesPerView: 2.1,
           },
           640: {
-            slidesPerView: 3,
+            slidesPerView: 3.5,
             spaceBetween: 10,
           },
           1024: {
