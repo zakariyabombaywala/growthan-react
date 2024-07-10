@@ -3,7 +3,7 @@ import React from "react";
 function SectionHeader({ variant, icon, hint, title, width }) {
   const style = {
     horizontal: "flex space-x-10 items-start ",
-    vertical: "flex flex-col space-y-10 items-center",
+    vertical: "flex flex-col space-y-10 items-center text-center",
   };
   return (
     <div>
@@ -11,7 +11,11 @@ function SectionHeader({ variant, icon, hint, title, width }) {
         <div className={`flex`}>
           <img className="max-w-[86]" src={icon} alt="icon" />
         </div>
-        <div className={`space-y-1`}>
+        <div
+          className={`${
+            style[variant] === "vertical" ? "space-y-4" : "space-y-1"
+          }`}
+        >
           <p className="text-[15px] text-red">
             / /{"  "}
             <span className="text-blue-900 uppercase font-medium">{hint}</span>
