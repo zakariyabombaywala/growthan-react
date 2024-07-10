@@ -11,11 +11,7 @@ function SectionHeader({ variant, icon, hint, title, width }) {
         <div className={`flex`}>
           <img className="max-w-[86]" src={icon} alt="icon" />
         </div>
-        <div
-          className={`${
-            style[variant] === "vertical" ? "space-y-4" : "space-y-1"
-          }`}
-        >
+        <div className={`space-y-4`}>
           <p className="text-[15px] text-red">
             / /{"  "}
             <span className="text-blue-900 uppercase font-medium">{hint}</span>

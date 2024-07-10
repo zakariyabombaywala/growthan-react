@@ -7,7 +7,7 @@ function ServiceCard({ icon, title, desc }) {
       <h2 className="text-blue font-bold text-[20px] md:text-[25px] capitalize">
         {title}
       </h2>
-      <p className="text-blue-900 text-[16px] md:text-[18px]">{desc}</p>
+      <p className="text-blue-900 text-base md:text-[18px]">{desc}</p>
     </div>
   );
 }

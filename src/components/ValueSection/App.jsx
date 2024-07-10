@@ -26,7 +26,7 @@ function ValueSection() {
     },
   ];
   return (
-    <div className="container pt-20 md:pt-40 pb-0 md:pb-20">
+    <div className="container pt-20 ">
       <div className="space-y-14">
         <SectionHeader
           icon={OutlineCheck}
@@ -41,7 +41,7 @@ function ValueSection() {
             );
           })}
         </div>
-        <div className="flex justify-center space-x-7">
+        <div className="flex flex-col space-y-6 justify-center items-center md:space-y-0 md:space-x-7 md:flex-row">
           <Button name="get in touch" variant="outline" />
           <Button name="our services" variant="icon" arrow />
         </div>

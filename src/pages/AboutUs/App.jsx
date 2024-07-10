@@ -3,6 +3,7 @@ import Banner from "../../components/Banner/App";
 import SubscribeBanner from "../../components/SubscribeBanner/App";
 import AboutSection from "../../components/AboutSection/App";
 import ValueSection from "../../components/ValueSection/App";
+import TeamSection from "../../components/TeamSection/App";
 
 function About() {
   return (
@@ -18,6 +19,7 @@ function About() {
       <SubscribeBanner variant="about" />
       <AboutSection />
       <ValueSection />
+      <TeamSection />
     </>
   );
 }
