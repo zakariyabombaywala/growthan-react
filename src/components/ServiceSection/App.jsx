@@ -1,6 +1,5 @@
 import React from "react";
 import SectionHeader from "../SectionHeader/App";
-import Icon from "../../assets/setting-outline-icon.png";
 import PerformanceIcon from "../../assets/mobile-icon.png";
 import MobileIcon from "../../assets/annouce-icon.png";
 import EmailIcon from "../../assets/dashboard-icon.png";
@@ -10,7 +9,7 @@ import ContentIcon from "../../assets/list-icon.png";
 import Button from "../Button/Button";
 import ServiceCard from "../ServiceCard/App";
 
-function ServiceSection() {
+function ServiceSection({ children, icon, hint, title, variant, width }) {
   const cardItems = [
     {
       icon: PerformanceIcon,
@@ -44,17 +43,20 @@ function ServiceSection() {
     },
   ];
   return (
-    <div className="container pt-20 md:pt-40 pb-0 md:pb-20">
-      <div className="flex justify-between items-center mb-[90px]">
+    <>
+      <div
+        className={`${
+          variant === "vertical" && "flex justify-center"
+        } mb-[90px]`}
+      >
         <SectionHeader
-          icon={Icon}
-          variant="horizontal"
-          hint="services"
-          title="Services We Provide"
+          icon={icon}
+          variant={variant}
+          hint={hint}
+          title={title}
+          children={children}
+          width={width}
         />
-        <div className="hidden md:block">
-          <Button name="Our Services" variant="icon" arrow={true} />
-        </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10">
         {cardItems.map((item) => {
@@ -63,7 +65,7 @@ function ServiceSection() {
           );
         })}
       </div>
-    </div>
+    </>
   );
 }
 

@@ -1,12 +1,14 @@
 import React from "react";
+import Button from "../Button/Button";
 
-function SectionHeader({ variant, icon, hint, title, width }) {
+function SectionHeader({ variant, icon, hint, title, width, children }) {
   const style = {
     horizontal: "flex space-x-10 items-start ",
-    vertical: "flex flex-col space-y-10 items-center text-center",
+    vertical:
+      "flex flex-col space-y-10 items-center justify-center text-center",
   };
   return (
-    <div>
+    <div className="flex justify-between items-center">
       <div className={`${style[variant]}`}>
         <div className={`flex`}>
           <img className="max-w-[86]" src={icon} alt="icon" />
@@ -23,6 +25,12 @@ function SectionHeader({ variant, icon, hint, title, width }) {
           </h3>
         </div>
       </div>
+
+      {children ? (
+        <div className="hidden md:block">
+          <Button name="Our Services" variant="icon" arrow={true} />
+        </div>
+      ) : null}
     </div>
   );
 }

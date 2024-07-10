@@ -7,12 +7,14 @@ import HowSection from "../../components/HowSection/App";
 import TestmSection from "../../components/TestmSection/App";
 import OfferSection from "../../components/OfferSection/App";
 import MobileMenu from "../../components/MobileMenu/App";
+import ServiceHome from "../../components/ServiceHome/App";
 
 function Home() {
   return (
     <div>
       <Hero />
-      <ServiceSection />
+      <ServiceHome />
+      {/* <ServiceSection /> */}
       <BrandSection />
       <WhySection />
       <HowSection />
