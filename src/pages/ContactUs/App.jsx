@@ -4,7 +4,14 @@ import Banner from "../../components/Banner/App";
 function Contact() {
   return (
     <>
-      <Banner img="bg-banner_contact" />
+      <Banner
+        img="bg-banner_contact"
+        children={
+          <>
+            Let's <span className="text-red">Talk</span>
+          </>
+        }
+      />
     </>
   );
 }

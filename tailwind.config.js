@@ -54,6 +54,7 @@ export default {
         banner_contact: "url(/src/assets/contact-banner.png)",
         subscribe: "url(/src/assets/Subscribe-bg-img.png)",
         statistic: "url(/src/assets/statistic-img.png)",
+        cta_bg: "url(/src/assets/bg-cta.png)",
       },
     },
   },
